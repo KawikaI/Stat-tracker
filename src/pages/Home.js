@@ -23,7 +23,7 @@ const Home = () => {
                 margin: "20px auto",
                 padding: "20px",
                 borderRadius: "10px",
-                backgroundColor: "#f9f9f9",
+                backgroundColor: "#d9d0d0",
                 boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                 maxWidth: "500px"
             }}>
