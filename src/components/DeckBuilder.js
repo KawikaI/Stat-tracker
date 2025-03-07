@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import CardSearch from "../components/CardSearch";
 
+// main deck builder func
 const DeckBuilder = () => {
     const [deck, setDeck] = useState([]);
     const [deckName, setDeckName] = useState("");
     const [deckFormat, setDeckFormat] = useState("Commander");
     const [deckDescription, setDeckDescription] = useState("");
     const [showCreateDeckForm, setShowCreateDeckForm] = useState(true);
+  
 
     useEffect(() => {
         const savedDeck = JSON.parse(localStorage.getItem("deck"));
@@ -20,6 +22,7 @@ const DeckBuilder = () => {
         localStorage.setItem("deck", JSON.stringify(deck));
     }, [deck]);
 
+    // add card to deck func
     const addCardToDeck = (card) => {
         if (!deck.some((c) => c.id === card.id)) {
             const updatedDeck = [...deck, card];
@@ -27,10 +30,12 @@ const DeckBuilder = () => {
         }
     };
 
+    // remove card func
     const removeCardFromDeck = (cardToRemove) => {
         setDeck(deck.filter((card) => card.id !== cardToRemove.id));
     };
 
+    // create deck func
     const createDeck = () => {
         if (!deckName.trim()) return;
         const newDeck = [{ id: "deck-placeholder", name: deckName, format: deckFormat, description: deckDescription }];
@@ -39,6 +44,7 @@ const DeckBuilder = () => {
         localStorage.setItem("deck", JSON.stringify(newDeck));
     };
 
+    // clear deck func
     const clearDeck = () => {
         setDeck((prevDeck) => (prevDeck.length > 0 ? [prevDeck[0]] : []));
         localStorage.setItem("deck", JSON.stringify([deck[0]]));
@@ -105,7 +111,7 @@ const DeckBuilder = () => {
                     <CardSearch addCardToDeck={addCardToDeck} deck={deck} />
 
                     <div style={styles.deckContainer}>
-                        <h3>Your Cards</h3>
+                        <h3>Your Cards ({deck.length - 1})</h3>
                         {deck.length <= 1 ? (
                             <p>No cards in deck</p>
                         ) : (
@@ -133,12 +139,14 @@ const DeckBuilder = () => {
     );
 };
 
+// bunch of styles
+
 const styles = {
     deckForm: {
         border: "2px solid #ccc",
         padding: "20px",
         borderRadius: "10px",
-        backgroundColor: "#f9f9f9",
+        backgroundColor: "#f8f9fa",
         boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
         maxWidth: "600px",
         margin: "auto",
@@ -182,7 +190,7 @@ const styles = {
         border: "2px solid #ccc",
         padding: "20px",
         borderRadius: "10px",
-        backgroundColor: "#f9f9f9",
+        backgroundColor: "#d9d0d0",
         boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
         maxWidth: "600px",
         margin: "auto",

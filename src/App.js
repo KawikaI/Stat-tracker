@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import DeckBuilder from "./components/DeckBuilder"; // ✅ Import DeckBuilder
+import DeckBuilder from "./components/DeckBuilder"; // deckbuilder import
 import "./App.css";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/deck-builder" element={<DeckBuilder />} /> {/* ✅ Ensure this is included */}
+        <Route path="/deck-builder" element={<DeckBuilder />} /> {/*include*/}
       </Routes>
     </Router>
   );

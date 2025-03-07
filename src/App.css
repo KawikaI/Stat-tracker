@@ -169,3 +169,44 @@
 .card-hover:hover .plus-icon {
   transform: scale(1.2);
 }
+
+.searchContainer {
+  display: flex;
+  justify-content: center; /* Center the input and button horizontally */
+  align-items: center; /* Align input and button vertically */
+  gap: 10px; /* Adds space between the input and button */
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.searchButton {
+  height: 42px; /* Slightly larger than input for better alignment */
+  padding: 0 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.suggestions-dropdown {
+  position: absolute; /* Keep dropdown anchored */
+  z-index: 1000; /* Ensure it's above other content */
+  background: #f8f9fa; /* Match input field */
+  width: 100%; /* Match the input width */
+  max-width: 300px; /* Keep dropdown the same width as input */
+  max-height: 150px; /* Prevent excessive height */
+  overflow-y: auto; /* Enable scrolling for overflow */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}

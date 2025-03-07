@@ -1,5 +1,6 @@
 import React from "react";
 
+// simpe deck list func
 const DeckList = ({ deck }) => {
   return (
     <div>

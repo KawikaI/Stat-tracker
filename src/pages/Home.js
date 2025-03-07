@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
+// main home func
 const Home = () => {
     return (
         <div style={{
@@ -43,7 +45,7 @@ const Home = () => {
                 </p>
             </div>
 
-            {/* Quick Navigation Buttons */}
+            {/* Quick Nav Buttons */}
             <div style={{ marginTop: "20px" }}>
                 <Link to="/deck-builder">
                     <button style={{

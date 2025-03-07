@@ -4,7 +4,7 @@ import { fetchCardByName } from "../services/scryfall";
 const Search = () => {
     const [cardName, setCardName] = useState("");
     const [cardData, setCardData] = useState(null);
-    const [error, setError] = useState(""); // 🔹 Error state for missing cards
+    const [error, setError] = useState(""); // error states fro missing cards
 
     const handleSearch = async () => {
         if (cardName.trim() === "") return;
@@ -76,7 +76,7 @@ const Search = () => {
                 </button>
             </div>
 
-            {/* 🔹 Display Error Message if No Card is Found */}
+            {/* error if no card is found */}
             {error && (
                 <p style={{
                     color: "red",
@@ -87,19 +87,19 @@ const Search = () => {
                     border: "2px solid red",
                     borderRadius: "5px",
                     display: "inline-block",
-                    backgroundColor: "#ffeeee"
+                    backgroundColor: "#d9d0d0"
                 }}>
                     {error}
                 </p>
             )}
 
-            {/* 🔹 Show Card Data if Found */}
+            {/* cisplay card data */}
             {cardData && (
                 <div style={{
                     marginTop: "20px",
                     padding: "20px",
                     borderRadius: "10px",
-                    backgroundColor: "#f9f9f9",
+                    backgroundColor: "#d9d0d0",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
                     maxWidth: "500px",
                     marginLeft: "auto",
@@ -113,6 +113,7 @@ const Search = () => {
                             width: "100%",
                             maxWidth: "300px",
                             borderRadius: "8px",
+                            backgroundColor: "#d9d0d0",
                             boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)"
                         }} 
                     />
