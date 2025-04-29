@@ -1,0 +1,134 @@
+[debug] [2025-04-29T21:51:10.687Z] ----------------------------------------------------------------------
+[debug] [2025-04-29T21:51:10.688Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2025-04-29T21:51:10.688Z] CLI Version:   14.0.1
+[debug] [2025-04-29T21:51:10.688Z] Platform:      darwin
+[debug] [2025-04-29T21:51:10.688Z] Node Version:  v22.13.1
+[debug] [2025-04-29T21:51:10.688Z] Time:          Tue Apr 29 2025 15:51:10 GMT-0600 (Mountain Daylight Time)
+[debug] [2025-04-29T21:51:10.688Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-29T21:51:10.759Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-29T21:51:10.759Z] > authorizing via signed-in user (kawikailac22@gmail.com)
+[debug] [2025-04-29T21:51:10.759Z] [iam] checking project stat-tracker-7e46d for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-29T21:51:10.759Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:10.759Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:10.760Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/stat-tracker-7e46d:testIamPermissions [none]
+[debug] [2025-04-29T21:51:10.760Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/stat-tracker-7e46d:testIamPermissions x-goog-quota-user=projects/stat-tracker-7e46d
+[debug] [2025-04-29T21:51:10.760Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/stat-tracker-7e46d:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-29T21:51:10.912Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/stat-tracker-7e46d:testIamPermissions 200
+[debug] [2025-04-29T21:51:10.912Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/stat-tracker-7e46d:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-29T21:51:10.912Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:10.912Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:10.912Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/stat-tracker-7e46d/serviceAccounts/stat-tracker-7e46d@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-04-29T21:51:10.912Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/stat-tracker-7e46d/serviceAccounts/stat-tracker-7e46d@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-04-29T21:51:11.111Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/stat-tracker-7e46d/serviceAccounts/stat-tracker-7e46d@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-04-29T21:51:11.111Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/stat-tracker-7e46d/serviceAccounts/stat-tracker-7e46d@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-04-29T21:51:11.112Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:11.112Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:11.112Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/stat-tracker-7e46d [none]
+[debug] [2025-04-29T21:51:11.569Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/stat-tracker-7e46d 200
+[debug] [2025-04-29T21:51:11.569Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/stat-tracker-7e46d {"projectId":"stat-tracker-7e46d","projectNumber":"856170174636","displayName":"stat-tracker","name":"projects/stat-tracker-7e46d","resources":{"hostingSite":"stat-tracker-7e46d"},"state":"ACTIVE","etag":"1_0faa798f-8497-4fac-8e36-3263b39f1b04"}
+[info] 
+[info] === Deploying to 'stat-tracker-7e46d'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2025-04-29T21:51:11.573Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:11.573Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:11.573Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/stat-tracker-7e46d [none]
+[debug] [2025-04-29T21:51:11.737Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/stat-tracker-7e46d 200
+[debug] [2025-04-29T21:51:11.738Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/stat-tracker-7e46d {"projectNumber":"856170174636","projectId":"stat-tracker-7e46d","lifecycleState":"ACTIVE","name":"stat-tracker","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-02-28T00:48:11.732320Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2025-04-29T21:51:11.739Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:11.740Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:11.740Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:11.740Z] Checked if tokens are valid: true, expires at: 1745965628224
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2025-04-29T21:51:11.740Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:11.740Z] Checked if tokens are valid: true, expires at: 1745965628224
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-04-29T21:51:11.740Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:11.740Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:11.740Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-29T21:51:11.740Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/stat-tracker-7e46d
+[debug] [2025-04-29T21:51:11.742Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-04-29T21:51:11.742Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/stat-tracker-7e46d
+[debug] [2025-04-29T21:51:11.743Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/cloudbuild.googleapis.com [none]
+[debug] [2025-04-29T21:51:11.743Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/cloudbuild.googleapis.com x-goog-quota-user=projects/stat-tracker-7e46d
+[debug] [2025-04-29T21:51:11.744Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/artifactregistry.googleapis.com [none]
+[debug] [2025-04-29T21:51:11.744Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/artifactregistry.googleapis.com x-goog-quota-user=projects/stat-tracker-7e46d
+[debug] [2025-04-29T21:51:12.271Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/runtimeconfig.googleapis.com 200
+[debug] [2025-04-29T21:51:12.272Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-04-29T21:51:12.272Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-29T21:51:12.273Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2025-04-29T21:51:12.286Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/artifactregistry.googleapis.com 200
+[debug] [2025-04-29T21:51:12.286Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2025-04-29T21:51:12.294Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/cloudbuild.googleapis.com 200
+[debug] [2025-04-29T21:51:12.294Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2025-04-29T21:51:12.295Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:12.295Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:12.295Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/stat-tracker-7e46d/adminSdkConfig [none]
+[debug] [2025-04-29T21:51:12.695Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/stat-tracker-7e46d/adminSdkConfig 200
+[debug] [2025-04-29T21:51:12.696Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/stat-tracker-7e46d/adminSdkConfig {"projectId":"stat-tracker-7e46d","storageBucket":"stat-tracker-7e46d.firebasestorage.app"}
+[debug] [2025-04-29T21:51:12.697Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:12.697Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:12.697Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/stat-tracker-7e46d/configs [none]
+[debug] [2025-04-29T21:51:12.932Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/stat-tracker-7e46d/configs 200
+[debug] [2025-04-29T21:51:12.933Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/stat-tracker-7e46d/configs {}
+[debug] [2025-04-29T21:51:12.935Z] Validating nodejs source
+[debug] [2025-04-29T21:51:13.537Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-04-29T21:51:13.537Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2025-04-29T21:51:13.538Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-04-29T21:51:13.543Z] Found firebase-functions binary at '/Users/kawikai/Desktop/Stat-tracker/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8044
+
+[error] (node:42368) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[debug] [2025-04-29T21:51:13.783Z] Got response from /__/functions.yaml {"endpoints":{"generateDeck":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"generateDeck"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] i  extensions: ensuring required API firebaseextensions.googleapis.com is enabled... 
+[debug] [2025-04-29T21:51:17.800Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:17.800Z] Checked if tokens are valid: true, expires at: 1745965628224
+[debug] [2025-04-29T21:51:17.800Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/firebaseextensions.googleapis.com [none]
+[debug] [2025-04-29T21:51:17.800Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/firebaseextensions.googleapis.com x-goog-quota-user=projects/stat-tracker-7e46d
+[debug] [2025-04-29T21:51:18.285Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/firebaseextensions.googleapis.com 503
+[debug] [2025-04-29T21:51:18.285Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/firebaseextensions.googleapis.com [omitted]
+[error] 
+[error] Error: Request to https://serviceusage.googleapis.com/v1/projects/stat-tracker-7e46d/services/firebaseextensions.googleapis.com had HTTP Error: 503, Visibility check was unavailable. Please retry the request and contact support if the problem persists
+[debug] [2025-04-29T21:51:18.359Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 503,
+      "message": "Visibility check was unavailable. Please retry the request and contact support if the problem persists",
+      "status": "UNAVAILABLE"
+    }
+  },
+  "response": {
+    "statusCode": 503
+  }
+}
