@@ -65,7 +65,7 @@ const Home = () => {
                         cursor: "pointer",
                         marginRight: "10px"
                     }}>
-                        Go to Deck Builder
+                        Go to Deck Gen
                     </button>
                 </Link>
 

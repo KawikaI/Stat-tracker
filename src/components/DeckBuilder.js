@@ -28,6 +28,7 @@ const DeckBuilder = () => {
             </h2>
             <p style={{ fontSize: "18px", color: "#666", marginBottom: "30px" }}>
                 Click a color to generate a random MTG deck!
+                Fair Warning it does take roughly 15-30 seconds for results!
             </p>
 
             <div className="color-buttons" style={{ marginBottom: "30px" }}>

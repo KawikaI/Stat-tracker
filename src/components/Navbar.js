@@ -27,7 +27,7 @@ const Navbar = () => {
                 gap: "20px"
             }}>
                 <Link to="/" style={navLinkStyle}>Home</Link>
-                <Link to="/deck-builder" style={navLinkStyle}>Deck Builder</Link>
+                <Link to="/deck-builder" style={navLinkStyle}>Deck Gen</Link>
                 <Link to="/about" style={navLinkStyle}>Search</Link>
             </div>
         </nav>

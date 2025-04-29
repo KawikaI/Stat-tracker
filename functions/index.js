@@ -25,7 +25,7 @@ exports.generateDeck = functions.https.onRequest((req, res) => {
         }
       }
 
-      let html = '<div class="grid grid-cols-3 gap-4">';
+      let html = '<div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; justify-items: center; margin-top: 20px;">';
       cards.forEach(card => {
         html += `
           <div class="border p-2 rounded shadow">
