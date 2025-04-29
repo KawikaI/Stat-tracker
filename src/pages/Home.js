@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
 // main home func
 const Home = () => {
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "https://unpkg.com/htmx.org@1.9.10";
+        script.defer = true;
+        document.body.appendChild(script);
+    }, []);
+
     return (
         <div style={{
             maxWidth: "800px",
@@ -14,7 +21,7 @@ const Home = () => {
         }}>
             {/* Welcome Header */}
             <h1 style={{ fontSize: "32px", marginBottom: "10px", color: "#333" }}>
-                Welcome to the Magic the gathering card Tracker!
+                Welcome to the Magic the Gathering card Tracker!
             </h1>
             <p style={{ fontSize: "18px", color: "#666" }}>
                 Build your MTG deck, search for cards, and track your collection!
